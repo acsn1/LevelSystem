@@ -1,0 +1,43 @@
+# --= Permissions =--
+# Show other profiles via /profile (input: /profile <target_name>) -> levelsystem.profile.others
+# Reset profile via /resetprofile (input: /resetprofile <target_name>) -> levelsystem.profile.reset
+
+
+# --= Configuration =--
+
+# Do you wish auto-saving to be enabled?
+autosave: true
+
+# autosave interval(in seconds) - Do not change unless you know what you are doing!
+autosave-delay: 300
+
+# Do you wish to send a message to the player when he levels up?
+next-level-message-send: true
+
+# Placeholders [%player%, %old_level%, %level%, %prestige%, %old_prestige%]
+next-level-message: '&e&lYou have been promoted to level %level%!'
+
+# Do you wish to send a message to the player when he prestiges?
+next-prestige-message-self-send: true
+
+# Do you wish to send a message to all the players when a player prestiges?
+next-prestige-message-global-send: true
+
+# Placeholders [%player%, %old_prestige%, %prestige%]
+# -self: is the message that is being sent to the player!
+# -global: is the message that is being sent globally to all players!
+next-prestige-message-self: '&e&lYou have unlocked Prestige-%prestige%!'
+next-prestige-message-global: '&8&l> &e%player% has been promoted to Prestige-%prestige%!'
+
+# Specify what are the max values for prestige, level and experience
+max-prestige: 100
+max-level: 100
+max-experience: 1000.0
+
+# Message that is being shown on /profile command!
+profile-message:
+  - '&5&lProfile of %player%!'
+  - ''
+  - '&d&lPrestige: &f%prestige%&8/&c%max_prestige%'
+  - '&d&lLevel: &f%level%&8/&c%max_level%'
+  - '&d&lExperience: &f%experience%&8/&c%max_experience%'

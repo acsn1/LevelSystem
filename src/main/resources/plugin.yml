@@ -1,0 +1,11 @@
+name: LevelSystem
+version: '${project.version}'
+main: org.acsn1.levelsystem.LevelSystem
+api-version: 1.19
+authors: [ acsn1 ]
+description:
+commands:
+  profile:
+    description: Shows profile statistics such as [Experience, Level, Prestige]
+  resetprofile:
+    description: Admin command
